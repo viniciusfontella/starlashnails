@@ -69,9 +69,9 @@ const NAILS=[
 // Texto repetido nos combos com cílios (vem da arte enviada pela cliente)
 const CILIOS_INCL='Cílios inclusos: vol. brasileiro, vol. celestial (5D), vol. stellar (4D), vol. starlight (fio a fio), vol. moonlight (3D)';
 const PROMO=[
- {img:'combo-olhar-completo',n:'Combo Olhar Completo',d:'1 extensão de cílios, 2 manutenções e 1 design de sobrancelhas.',v:'R$ 210',rules:['Válido 1 vez no mês',CILIOS_INCL]},
- {img:'combo-cilios-gel',n:'Combo Cílios + Gel',d:'1 extensão de cílios e 1 alongamento em gel.',v:'R$ 190',rules:['Válido 1 vez no mês',CILIOS_INCL]},
- {img:'combo-gel-manutencoes',n:'Combo Gel + Manutenções',d:'1 alongamento em gel e 2 manutenções.',v:'R$ 200',rules:['Válido 1 vez no mês','Incluso nail art simples']},
+ {img:'combo-olhar-completo',n:'Star Deluxe',d:'1 extensão de cílios, 2 manutenções e 1 design de sobrancelhas.',v:'R$ 210',rules:['Válido 1 vez no mês',CILIOS_INCL]},
+ {img:'combo-cilios-gel',n:'Star Glow',d:'1 extensão de cílios e 1 alongamento em gel.',v:'R$ 190',rules:['Válido 1 vez no mês',CILIOS_INCL]},
+ {img:'combo-gel-manutencoes',n:'Star Girl',d:'1 alongamento em gel e 2 manutenções.',v:'R$ 200',rules:['Válido 1 vez no mês','Incluso nail art simples']},
 ];
 
 /* Design de sobrancelha (2 cards). Valores PROVISÓRIOS: ajuste para os reais. */
