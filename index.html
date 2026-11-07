@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!-- Diz ao navegador que este arquivo é HTML5 -->
+<html lang="pt-BR"><!-- Idioma da página: português do Brasil (ajuda leitores de tela e o Google) -->
+<head><!-- HEAD = informações "invisíveis" da página (título, ícone, fontes, CSS) -->
+<meta charset="utf-8"><!-- Codificação de texto: permite acentos e ç sem quebrar -->
+<!-- Faz o site se ajustar ao tamanho da tela do celular; viewport-fit=cover usa a tela toda em iPhones com "notch" -->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Título que aparece na aba do navegador e no Google. EDITE aqui para mudar -->
+<title>STAR LASH-NAILS | Extensão de cílios e unhas em Caçapava - SP</title>
+<!-- Descrição que aparece abaixo do título nos resultados do Google -->
+<meta name="description" content="STAR LASH-NAILS: extensão de cílios e unhas em Caçapava - SP. Veja o catálogo e agende seu horário pelo WhatsApp.">
+<!-- Cor da barra do navegador no celular (mesma cor roxa escura do site) -->
+<meta name="theme-color" content="#16002B">
+<!-- Ícone pequeno da aba do navegador (favicon). Usa a logo da pasta img -->
+<link rel="icon" href="img/icone-estrela.svg" type="image/svg+xml">
+<!-- Tags Open Graph: título/descrição que aparecem quando o link é compartilhado (WhatsApp, Facebook...) -->
+<meta property="og:title" content="STAR LASH-NAILS | Cílios e unhas em Caçapava - SP">
+<meta property="og:description" content="Realce sua beleza. Revele sua identidade. Veja o catálogo e agende pelo WhatsApp.">
+<meta property="og:type" content="website">
+<!-- As 3 linhas abaixo carregam as fontes do Google Fonts (Cormorant Garamond para títulos, Manrope para textos) -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><!-- Abre a conexão com antecedência (mais rápido) -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,500&family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+<!-- Liga o arquivo de estilos (cores, tamanhos, animações) -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body><!-- BODY = tudo o que aparece na tela -->
+
+<!-- ================= CABEÇALHO (fica fixo no topo) ================= -->
+<header>
+ <div class="wrap bar"><!-- "wrap" centraliza o conteúdo; "bar" alinha logo e menu na mesma linha -->
+  <!-- Link da marca: clicar leva ao topo (#inicio). aria-label = texto para leitores de tela -->
+  <a href="#inicio" class="brand" aria-label="STAR LASH-NAILS - início">
+   <!-- Ícone do cabeçalho: só a estrela (a logo completa fica grande no topo da página) -->
+   <img class="mark" src="img/icone-estrela.svg" width="40" height="40" alt="" decoding="async">
+   <!-- Nome ao lado da logo; o <span> interno pinta "LASH-NAILS" de lilás -->
+   <span class="logo">STAR <span>LASH-NAILS</span></span>
+  </a>
+  <!-- Botão "hambúrguer" (3 tracinhos). Só aparece no celular; o script.js abre/fecha o menu -->
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <!-- Menu de navegação. id="menu" é usado pelo script para abrir/fechar -->
+  <nav id="menu" aria-label="Principal">
+   <!-- href="#lash" rola até a seção com id="lash" -->
+   <a class="l" href="#inicio">Início</a>
+   <a class="l" href="#promocoes">Promoções</a>
+   <a class="l" href="#lash">Cílios</a>
+   <a class="l" href="#nails">Unhas</a>
+   <a class="l" href="#sobrancelhas">Sobrancelhas</a>
+   <a class="l" href="#orientacoes">Dúvidas</a>
+   <!-- data-wa = mensagem do WhatsApp. O script.js transforma isso em link wa.me com o texto pronto -->
+   <a class="btn p" href="#" data-wa="Oii! Vim pelo site e eu tenho interesse em agendar um horário. Gostaria de saber quais estão disponíveis.">Agendar horário</a>
+  </nav>
+ </div>
+</header>
+
+<main><!-- Conteúdo principal da página -->
+
+<!-- ================= SEÇÃO INICIAL (HERO) ================= -->
+<section class="hero" id="inicio">
+ <!-- Caixa vazia: o script.js cria aqui as estrelinhas brilhantes do fundo -->
+ <div class="stars" id="stars" aria-hidden="true"></div>
+ <!-- No celular: logo, textos e pagamento um embaixo do outro. No computador: textos à esquerda, logo e pagamento à direita (ver style.css) -->
+ <div class="wrap">
+  <div class="hero-text"><!-- Bloco dos textos -->
+   <!-- Linha pequena acima do título. Classe "in" = animação de entrada -->
+   <p class="eyebrow in">Extensão de cílios, unhas e sobrancelhas · Caçapava - SP</p>
+   <!-- Título principal da página (o que aparece grande). <em> = segunda linha em itálico lilás -->
+   <h1 class="in">Realce sua beleza.<em>Revele sua identidade.</em></h1>
+   <div class="cta in"><!-- Área dos botões -->
+    <!-- Botão roxo (btn p = primário) que abre o WhatsApp. Troque o texto em data-wa para mudar a mensagem -->
+    <a class="btn p" href="#" data-wa="Oii! Vim pelo site e eu tenho interesse em agendar um horário. Gostaria de saber quais estão disponíveis.">Agendar pelo WhatsApp</a>
+    <!-- Botão transparente (btn s = secundário) para o Instagram; target=_blank abre em nova aba -->
+    <a class="btn s" href="https://www.instagram.com/starlash.nails" target="_blank" rel="noopener">Instagram</a>
+   </div>
+  </div>
+  <div class="visual in"><!-- Logo grande (flutua com animação no computador) -->
+   <img class="hero-logo" src="img/logo-stars.webp" data-b="logo-stars" data-i="0" onerror="nextExt(this)" width="960" height="540" alt="Logo STAR LASH-NAILS: estrelas e arco em tons de roxo" fetchpriority="high" decoding="async">
+  </div>
+  <!-- FORMAS DE PAGAMENTO: para incluir/remover uma, copie ou apague um <li> -->
+  <div class="pay in" aria-label="Formas de pagamento">
+   <p>Formas de pagamento</p>
+   <ul>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="2.5"/></svg>Dinheiro</li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg>Débito</li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4M15 15h3"/></svg>Crédito</li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l9.5 9.5-9.5 9.5L2.5 12zM8 12l4-4 4 4-4 4z"/></svg>Pix</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<!-- ================= CATÁLOGO PROMOÇÕES (fica antes do Lash) ================= -->
+<section class="cat" id="promocoes" aria-labelledby="tp">
+ <div class="wrap head rv">
+  <div><h2 id="tp">PROMOÇÕES</h2><span class="orn" aria-hidden="true"></span><p>Combos especiais para você cuidar da beleza gastando menos.</p></div>
+  <div class="arrows"><button data-t="promo" data-d="-1" aria-label="Anterior">&#8592;</button><button data-t="promo" data-d="1" aria-label="Próximo">&#8594;</button></div>
+ </div>
+ <div class="track" id="promo-track" tabindex="0" aria-label="Carrossel de promoções"></div><!-- cards vêm da lista PROMO -->
+ <div class="dots" id="promo-dots"></div>
+</section>
+
+<!-- ================= CATÁLOGO (Cílios / Unhas / Sobrancelhas em abas) ================= -->
+<!-- Uma seção só, com 3 abas. Os links do menu (#lash, #nails, #sobrancelhas) abrem a aba certa (script.js, parte 4b) -->
+<section class="cat" id="catalogo" aria-labelledby="tc">
+ <div class="wrap head rv"><!-- "rv" = aparece suavemente ao rolar a página -->
+  <div>
+   <h2 id="tc">CATÁLOGO</h2><!-- Título da seção -->
+   <span class="orn" aria-hidden="true"></span><!-- Enfeite (linha com estrela) desenhado pelo CSS -->
+   <p>Encontre o estilo perfeito para valorizar o seu olhar.</p><!-- Subtítulo (muda conforme a aba, ver data-sub) -->
+  </div>
+  <!-- Setas do carrossel. data-t é atualizado pelo script.js para a aba aberta -->
+  <div class="arrows"><button data-t="lash" data-d="-1" aria-label="Anterior">&#8592;</button><button data-t="lash" data-d="1" aria-label="Próximo">&#8594;</button></div>
+ </div>
+ <!-- Botões das abas. data-tab = qual painel abre; data-sub = subtítulo que aparece em cima -->
+ <div class="wrap rv"><div class="tabs" role="tablist" aria-label="Categorias do catálogo">
+  <button role="tab" id="tab-lash" aria-controls="lash" aria-selected="true" data-tab="lash" data-sub="Encontre o estilo perfeito para valorizar o seu olhar.">Cílios</button>
+  <button role="tab" id="tab-nails" aria-controls="nails" aria-selected="false" tabindex="-1" data-tab="nails" data-sub="Unhas com acabamento impecável para todos os estilos.">Unhas</button>
+  <button role="tab" id="tab-brows" aria-controls="sobrancelhas" aria-selected="false" tabindex="-1" data-tab="brows" data-sub="Sobrancelhas alinhadas para emoldurar e valorizar o seu olhar.">Sobrancelhas</button>
+ </div></div>
+ <!-- PAINEL CÍLIOS. Faixa VAZIA de propósito: o script.js cria os cards a partir da lista LASH -->
+ <div class="panel" id="lash" role="tabpanel" aria-labelledby="tab-lash">
+  <div class="track" id="lash-track" tabindex="0" aria-label="Carrossel de cílios"></div>
+  <div class="dots" id="lash-dots"></div><!-- Bolinhas indicadoras; também criadas pelo script.js -->
+ </div>
+ <!-- PAINEL UNHAS (cards vêm da lista NAILS) -->
+ <div class="panel" id="nails" role="tabpanel" aria-labelledby="tab-nails" hidden>
+  <div class="track" id="nails-track" tabindex="0" aria-label="Carrossel de unhas"></div>
+  <div class="dots" id="nails-dots"></div>
+ </div>
+ <!-- PAINEL SOBRANCELHAS (cards vêm da lista BROWS) -->
+ <div class="panel" id="sobrancelhas" role="tabpanel" aria-labelledby="tab-brows" hidden>
+  <div class="track" id="brows-track" tabindex="0" aria-label="Carrossel de design de sobrancelha"></div>
+  <div class="dots" id="brows-dots"></div>
+ </div>
+</section>
+
+<!-- ================= DÚVIDAS / ANTES DE AGENDAR ================= -->
+<!-- Cada <details> é uma pergunta que abre e fecha. Para adicionar, copie um <details> inteiro -->
+<section class="cat tips-sec" id="orientacoes" aria-labelledby="to">
+ <div class="wrap head rv">
+  <div><h2 id="to">ANTES DE AGENDAR</h2><span class="orn" aria-hidden="true"></span><p>Tudo o que você precisa saber antes de agendar um horário.</p></div>
+ </div>
+ <div class="wrap">
+  <div class="faq rv">
+   <details open><summary>Como funciona o agendamento?</summary><p>O agendamento é confirmado somente após o pagamento de 50% do valor total do procedimento, como sinal.</p></details>
+   <details><summary>Quanto tempo dura o procedimento?</summary><p>Os procedimentos variam de 40min a 3h30 (pode variar de pessoa pra pessoa).</p></details>
+   <details><summary>Posso ir maquiada?</summary><p>Não venha de maquiagem no dia do procedimento, principalmente se for aplicação ou manutenção de extensão.</p></details>
+   <details><summary>Uso lente de contato. Tem problema?</summary><p>Sem problema, só remova a lente antes do procedimento.</p></details>
+   <details><summary>Qual o prazo da manutenção dos cílios?</summary><p>A manutenção deve ser feita entre 15 e 20 dias para ter o valor de manutenção. Caso passe esse prazo ou você retorne com menos de 40% dos fios sintéticos, será cobrada uma nova aplicação.</p></details>
+  </div>
+ </div>
+</section>
+</main>
+
+<!-- ================= RODAPÉ ================= -->
+<footer>
+ <div class="wrap">
+  <div class="fg"><!-- Grade de 3 colunas (vira 1 coluna no celular) -->
+   <div><!-- Coluna 1: marca -->
+    <div class="logo">STAR <span>LASH-NAILS</span></div>
+    <p>Realce sua beleza. Revele sua identidade.</p>
+    <p>Caçapava - SP</p><!-- Cidade -->
+   </div>
+   <div><!-- Coluna 2: links rápidos -->
+    <h4>Navegue</h4>
+    <ul><li><a href="#inicio">Início</a></li><li><a href="#promocoes">Promoções</a></li><li><a href="#lash">Cílios</a></li><li><a href="#nails">Unhas</a></li><li><a href="#sobrancelhas">Sobrancelhas</a></li><li><a href="#orientacoes">Dúvidas</a></li></ul>
+   </div>
+   <div><!-- Coluna 3: redes sociais -->
+    <h4>Fale com a gente</h4>
+    <div class="soc">
+     <!-- Ícone do Instagram (SVG = desenho em código; o formato fica no atributo d, não precisa mexer) -->
+     <a href="https://www.instagram.com/starlash.nails" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.6 5.9a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg></a>
+     <!-- Ícone do WhatsApp; data-wa define a mensagem inicial -->
+     <a href="#" data-wa="Oii! Vim pelo site e eu tenho interesse em agendar um horário. Gostaria de saber quais estão disponíveis." aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 0 1 12 4zm-3 3.5c-.3 0-.7.1-1 .5-.4.5-1 1.2-1 2.5s1 2.7 1.1 2.9c.1.2 2 3.200 5 4.400 2.400 1 2.900.8 3.400.7.600-.1 1.700-.7 1.900-1.400.2-.7.2-1.200.2-1.400l-.5-.3-1.700-.8c-.2-.1-.4-.1-.6.1l-.8 1c-.1.200-.3.200-.6.100-.3-.1-1.200-.5-2.200-1.400-.8-.7-1.400-1.600-1.500-1.900-.2-.3 0-.4.100-.6l.4-.4.2-.4v-.4l-.8-1.900c-.2-.5-.4-.4-.6-.4H9z"/></svg></a>
+    </div>
+   </div>
+  </div>
+  <div class="copy">© 2026 STAR LASH-NAILS. Todos os direitos reservados.</div><!-- Direitos autorais -->
+  <!-- Crédito do desenvolvedor (uma linha discreta; o nome é o link do WhatsApp) -->
+  <p class="dev">Site desenvolvido por <a href="https://wa.me/5512991079757?text=Ol%C3%A1%2C%20Vin%C3%ADcius!%20Vi%20o%20site%20da%20STAR%20LASH-NAILS%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener noreferrer">Vinícius Fontella</a></p>
+ </div>
+</footer>
+<!-- Carrega o script.js. "defer" = só roda depois que a página inteira carregou -->
+<script src="script.js" defer></script>
+</body>
+</html>
